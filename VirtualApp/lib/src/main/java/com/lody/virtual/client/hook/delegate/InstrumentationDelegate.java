@@ -23,7 +23,7 @@ import android.view.MotionEvent;
  */
 public class InstrumentationDelegate extends Instrumentation {
 
-	private Instrumentation base;
+	protected Instrumentation base;
 
 	public InstrumentationDelegate(Instrumentation base) {
 		this.base = base;
@@ -342,4 +342,6 @@ public class InstrumentationDelegate extends Instrumentation {
 	public UiAutomation getUiAutomation() {
 		return base.getUiAutomation();
 	}
+
+
 }
